@@ -54,10 +54,4 @@ class Project
     end
     project_volunteers
   end
-
-
-
-
-
 end
-
