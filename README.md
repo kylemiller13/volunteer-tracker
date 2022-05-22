@@ -38,17 +38,21 @@ _This application was created to demonstrate my understanding of CRUD functional
 ## Database Setup (_Type in terminal_)
 
 * Connect to PSQL
+```
 psql
 ```
 * Create a Database 
-CREATE DATABASE _database name_;
+```
+CREATE DATABASE dbname;
 ```
 * Connect to Database
-\c _database name_;
+```
+\c dbname;
 ```
 * Create tables 
-CREATE TABLE _database name_ (id serial PRIMARY KEY, title varchar);
-CREATE TABLE _database name_ (id serial PRIMARY KEY, name varchar, project_id int);
+```
+CREATE TABLE dbname (id serial PRIMARY KEY, title varchar);
+CREATE TABLE dbname (id serial PRIMARY KEY, name varchar, project_id int);
 ```
 ## Known Bugs
 
