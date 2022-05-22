@@ -55,7 +55,7 @@ CREATE TABLE [DATABASE NAME] (id serial PRIMARY KEY, title varchar);
 CREATE TABLE [DATABASE NAME] (id serial PRIMARY KEY, name varchar, project_id int);
 ```
 
-## Backing up Database Setup (_Type in terminal_)
+## Backing up Database Setup for Windows (_Type in terminal_)
 
 * Create a Database 
 ```
@@ -63,7 +63,7 @@ CREATE DATABASE [DATABASE NAME];
 ```
 * Directs the database backup into the database
 ```
-psql [DATABASE_NAME] < database_backup.sql
+psql.exe [DATABASE_NAME] < database_backup.sql
 ```
 * Creates a test database
 ```
