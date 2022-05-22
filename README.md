@@ -43,16 +43,31 @@ psql
 ```
 * Create a Database 
 ```
-CREATE DATABASE dbname;
+CREATE DATABASE [DATABASE NAME];
 ```
 * Connect to Database
 ```
-\c dbname;
+\c [DATABASE NAME];
 ```
 * Create tables 
 ```
-CREATE TABLE dbname (id serial PRIMARY KEY, title varchar);
-CREATE TABLE dbname (id serial PRIMARY KEY, name varchar, project_id int);
+CREATE TABLE [DATABASE NAME] (id serial PRIMARY KEY, title varchar);
+CREATE TABLE [DATABASE NAME] (id serial PRIMARY KEY, name varchar, project_id int);
+```
+
+## Backing up Database Setup (_Type in terminal_)
+
+* Create a Database 
+```
+CREATE DATABASE [DATABASE NAME];
+```
+* Directs the database backup into the database
+```
+psql [DATABASE_NAME] < database_backup.sql
+```
+* Creates a test database
+```
+createdb -T [DATABASE NAME] [TEST DATABASE NAME]
 ```
 ## Known Bugs
 
